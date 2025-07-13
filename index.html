@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Event Management Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Header Section -->
+  <header class="header">
+    <h1 id="clubName">Tech Club</h1>
+    <p id="greeting"></p>
+    <p id="currentDate"></p>
+  </header>
+
+  <!-- Navigation -->
+  <nav class="nav">
+    <a href="#upcoming">Upcoming Events</a>
+    <a href="#form">Add Event</a>
+    <a href="#resources">Resources</a>
+  </nav>
+
+  <!-- Upcoming Events Section -->
+  <section id="upcoming">
+    <h2>Upcoming Events</h2>
+    <div id="eventsList" class="event-cards"></div>
+  </section>
+
+  <!-- Event Submission Form -->
+  <section id="form">
+    <h2>Add New Event</h2>
+    <form id="eventForm">
+      <label>Event Name: <input type="text" id="eventName"></label>
+      <label>Event Date: <input type="date" id="eventDate"></label>
+      <label>Description: <textarea id="eventDescription"></textarea></label>
+      <button type="submit">Submit</button>
+      <p id="formMessage"></p>
+    </form>
+  </section>
+
+  <!-- External Resources -->
+  <section id="resources">
+    <h2>External Resources</h2>
+    <ul>
+      <li>Visit our <a href="https://example.com/calendar" target="_blank">Event Calendar</a></li>
+      <li>Read our <a href="https://example.com/rules">Club Rules</a></li>
+      <li>See <a href="#" onclick="window.open('https://example.com/photos')">Event Gallery</a></li>
+    </ul>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
